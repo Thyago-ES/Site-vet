@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Estilos específicos */
+ul {
+    list-style-type: disc;
+}
+
+address {
+    font-style: normal;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#botao{
+  width: 200px;
+  height: 50px;
+  background-color: #009933;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#centro{
+    text-align: center;
+}
