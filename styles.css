@@ -58,8 +58,21 @@ footer {
   background-color: #009933;
   font-size: 20px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #centro{
     text-align: center;
+}
+
+#botao:active {
+    cursor: default;
+}
+
+#formulario-container {
+    display: none;
+}
+
+#formulario-container.mostrando {
+    display: block;
 }

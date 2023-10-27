@@ -1,23 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const consultaForm = document.getElementById("consulta-form");
-    const resultadoDiv = document.getElementById("resultado");
+function mostrarFormulario() {
+    const formularioContainer = document.getElementById("formulario-container");
 
-    consultaForm.addEventListener("submit", function(event) {
-        event.preventDefault();
+    formularioContainer.classList.toggle("mostrando");
 
-        const nomeAluno = document.getElementById("nome").value;
-        
-        // Aqui você pode implementar a lógica de consulta dos alunos
-        // Substitua esta mensagem pelo resultado real
-        resultadoDiv.textContent = `Aluno encontrado: ${nomeAluno}`;
-    });
-});
-
-function reAgendamento() {
-        window.location.href = "agendamento.html";
-        }
-
-#cor{
-  color: red;
-  background-color: blue;
+    formularioContainer.classList.remove("escondido");
 }
