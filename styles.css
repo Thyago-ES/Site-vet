@@ -4,10 +4,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    font-size:  large;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #1e6443;
     color: white;
     text-align: center;
     padding: 20px;
@@ -69,10 +70,27 @@ footer {
     cursor: default;
 }
 
-#formulario-container {
-    display: none;
+
+#welcome-dialog {
+    
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-#formulario-container.mostrando {
-    display: block;
+#welcome-dialog button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
 }
