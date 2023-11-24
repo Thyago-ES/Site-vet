@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type=" text/javascript" src="script.js"></script>
     <title>Consulta de Medicina Veterinária</title>
 </head>
 <body>
@@ -14,20 +15,75 @@
 
     <nav>
         <ul>
-            <li><a href="#home">Página Inicial</a></li>
-            <li><a href="consulta.html">Consulta</a></li>
+            <li><a>Consulta</a></li>
         </ul>
     </nav>
 
-    <section id="home">
-        <h2>Página Inicial</h2>
-        <p>Bem-vindo ao nosso site da Clínica Geral Online! Aqui, oferecemos um cuidado médico simples e direto para as suas necessidades de saúde cotidianas. Nossa clínica não trata casos complexos e específicos, mas estamos aqui para ajudar com questões médicas comuns.
+    <section id="consulta">
+        <h2>Consulta</h2>
+    </section>    
+    
+    <section>
+        <a href="agendamento.html">
+            <button id="botao">
+                Faça sua ficha
+            </button>
+        </a>
+       
 
-            A melhor parte é que tornamos o processo fácil para você. Oferecemos a conveniência do agendamento online, permitindo que você marque consultas no conforto da sua casa. Se você precisa de atendimento médico para problemas mais simples e deseja fazer o agendamento online, estamos prontos para cuidar de você.
+
+        <br>
+        <br>
+        <br>
+
+    <dialog id="abrir"> 
+            <div id="welcome-dialog">
+            <h2>Status da Ficha</h2>
+
+            <div>
+                <label for="fonte">Digite o seu CPF </label>
+                <input type="text" name="cpf" id="cpf" required>
+                </div>
             
-            Nossa equipe de profissionais de saúde está aqui para fornecer um serviço amigável e eficiente, focado em solucionar seus problemas médicos do dia a dia. Agradecemos por escolher a Clínica Geral Online como seu destino para cuidados de saúde acessíveis e práticos. Estamos ansiosos para atendê-lo e ajudá-lo a se sentir melhor.</p>
-    </section>
+                <br>
+            
+            <div>
+                <label for="email">Digite o seu email</label>
+                <input type="text" name="email" id="email" required>
+            </div>
 
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+            <button onclick="fecharDialog()">Fechar</button>
+        </div>
+    </dialog>
+    
+
+    <button onclick="abrirDialog(document.getElementById('abrir'))" id="botao">Status da Ficha</button>
+
+    
+        <br>
+        <br>
+        <br>
+
+        <dialog id="abrira"> 
+            <div id="welcome-dialog">
+            <h2>Quem Somos</h2>
+            <p>Aqui, oferecemos um cuidado médico simples e direto para as suas necessidades de saúde cotidianas.</p>
+            <p>Nossa clínica não trata casos complexos e específicos, mas estamos aqui para ajudar com questões médicas comuns.</p>
+            <p>A melhor parte é que tornamos o processo fácil para você. Oferecemos a conveniência do agendamento online, permitindo que você marque consultas no conforto da sua casa. Se você precisa de atendimento médico para problemas mais simples e deseja fazer o agendamento online, estamos prontos para cuidar de você.</p>
+            <p>Nossa equipe de profissionais de saúde está aqui para fornecer um serviço amigável e eficiente, focado em solucionar seus problemas médicos do dia a dia. Agradecemos por escolher a Clínica Geral Online como seu destino para cuidados de saúde acessíveis e práticos. Estamos ansiosos para atendê-lo e ajudá-lo a se sentir melhor.</p>
+            <button onclick="fecharDial()">Fechar</button>
+        </div>
+    </dialog>
+    
+
+    <button onclick="abrirDialog(document.getElementById('abrira'))" id="botao">Quem Somos</button>
+
+    <br>
+
+        </ul>
 
     <section id="contato">
         <h2>Contato</h2>
